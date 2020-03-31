@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".presentation.main.MainFragment">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/MainFrTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        style="@style/MainFrImageView"
+        android:src="@drawable/illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/q_amount"
+        style="@style/MainFrQAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+
+    <TextView
+        android:id="@+id/q_amount_number"
+        style="@style/MainFrQAmountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/q_amount"
+        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+
+    <SeekBar
+        android:id="@+id/main_seekBar"
+        style="@style/MainFrSeekbarMain"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:min="5"
+        android:progressTint="@android:color/holo_purple"
+        android:thumbTint="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/q_amount_number" />
+
+    <TextView
+        android:id="@+id/hint_category"
+        style="@style/MainFrHintCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_seekBar" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        style="@style/MainFrSpinner"
+        android:layout_height="wrap_content"
+        android:entries="@array/categories_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_category" />
+
+    <TextView
+        android:id="@+id/hint_difficulty"
+        style="@style/MainFrHintDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_category" />
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        style="@style/MainFrSpinner"
+        android:layout_height="wrap_content"
+        android:entries="@array/difficulty_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_difficulty" />
+
+    <Button
+        android:id="@+id/main_start_btn"
+        style="@style/MainFrBtnStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_difficulty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

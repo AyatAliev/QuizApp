@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/question_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Google bla-bla"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/multiple_question_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/first_btn"
+            style="@style/MultipleBtn" />
+
+        <Button
+            android:id="@+id/second_btn"
+            style="@style/MultipleBtn" />
+
+        <Button
+            android:id="@+id/third_btn"
+            style="@style/MultipleBtn" />
+
+        <Button
+            android:id="@+id/four_btn"
+            style="@style/MultipleBtn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_question_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/btn_one_type"
+            style="@style/MultipleBtn" />
+
+        <Button
+            android:id="@+id/btn_two_type"
+            style="@style/MultipleBtn" />
+
+    </LinearLayout>
+
+</LinearLayout>

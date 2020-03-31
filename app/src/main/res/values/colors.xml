@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BE52F2</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="blue_for_btn">#6979F8</color>
+    <color name="purple">#9C27B0</color>
+    <color name="pink">#FF6581</color>
+    <color name="white">#FFFFFF</color>
+    <color name="correct_answer">#4CE2A7</color>
+    <color name="incorrect_answer">#FF4D4D</color>
+    <color name="selected_answer">#6979F8</color>
+    <color name="btn_color">#6979F8</color>
+    <color name="black">#000</color>
+    <color name="gray_text">#801F2041</color>
+    <color name="gray_color_def">#A9A9A9</color>
+    <color name="correct_color">#4CE2A7</color>
+    <color name="wrong_color">#FF4D4D</color>
+    <color name="colorDark_purple">#3F3356</color>
+</resources>
