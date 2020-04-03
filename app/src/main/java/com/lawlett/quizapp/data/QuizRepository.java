@@ -1,4 +1,4 @@
-package com.lawlett.quizapp.data.remote;
+package com.lawlett.quizapp.data;
 
 import androidx.lifecycle.LiveData;
 
@@ -7,6 +7,8 @@ import com.lawlett.quizapp.data.local.HistoryStorage;
 import com.lawlett.quizapp.data.model.History;
 import com.lawlett.quizapp.data.model.Question;
 import com.lawlett.quizapp.data.model.QuizResult;
+import com.lawlett.quizapp.data.remote.IQuizApiClient;
+import com.lawlett.quizapp.data.remote.QuizApiClient;
 
 import java.util.ArrayList;
 import java.util.Collections;

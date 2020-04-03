@@ -10,7 +10,7 @@ import com.lawlett.quizapp.App;
 import com.lawlett.quizapp.data.model.Question;
 import com.lawlett.quizapp.data.model.QuizResult;
 import com.lawlett.quizapp.data.remote.IQuizApiClient;
-import com.lawlett.quizapp.data.remote.QuizRepository;
+import com.lawlett.quizapp.data.QuizRepository;
 import com.lawlett.quizapp.utils.SingleLiveEvent;
 
 import java.util.Date;

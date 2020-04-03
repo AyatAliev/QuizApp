@@ -37,7 +37,6 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="17sp"
-            app:layout_constraintEnd_toStartOf="@+id/dots"
             app:layout_constraintStart_toEndOf="@id/history_category"
             app:layout_constraintTop_toTopOf="@id/history_category" />
         <TextView
